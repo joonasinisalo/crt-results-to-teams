@@ -24,8 +24,8 @@ End Suite
     Send Results        ${RESULTS}    ${CHANNEL_WEBHOOK}
 
 Update Results
-    Log                 \nTest Status: ${TEST STATUS}
-    Log                 \nTest Message: ${TEST MESSAGE}
+    Log                 Test Status: ${TEST STATUS}
+    Log                 Test Message: ${TEST MESSAGE}
 
     ${total}=           Evaluate    ${RESULTS}[tests_total] + 1
     Set To Dictionary   ${RESULTS}    tests_total=${total}
